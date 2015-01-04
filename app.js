@@ -1,11 +1,11 @@
 (function() {
-  var app = angular.module('gemStore', []);
+  var app = angular.module('coffeeStore', []);
 
   app.controller('StoreController', function(){
-    this.products = gems;
+    this.products = coffees;
   });
 
-  var gems = [
+  var coffees = [
   	{id: 1, title: "Filter Coffee", price: 2.90, count: 12},
   	{id: 2, title: "Capuccino", price: 2.40, count: 13},
   	{id: 3, title: "Grande Capuccino", price: 3.20, count: 11},
