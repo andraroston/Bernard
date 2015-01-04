@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gemStore">
+<head>
+	<meta charset="UTF-8">
+	<title>Bernard</title>
+	<link type="text/css" rel="stylesheet" href="main.css"/>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<header>
+	<h1>Bernard</h1>
+</header>
+<body ng-controller="StoreController as store">
+	<div ng-repeat="product in store.products">
+		<p>{{product.id}}</p>
+		<p>{{product.title}}</p>
+		<p>{{product.price | currency: "£"}}</p>
+		<p>{{product.count}}</p>
+	</div>
+</body>
+</html>
